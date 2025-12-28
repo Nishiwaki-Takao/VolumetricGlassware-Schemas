@@ -1,0 +1,28 @@
+{
+  "GraduatedPipette": [
+    { "NominalCapacity": 0.1, "Subdivision": 0.001 ,"CapacityTolerance": 0.005, "Class": "A", "Calibration": "TD", "ColorCode": { "Color": "Green", "NumberOfRing": 2 } },
+    { "NominalCapacity": 0.1, "Subdivision": 0.005, "CapacityTolerance": 0.005, "Class": "A", "Calibration": "TD", "ColorCode": { "Color": "Red", "NumberOfRing": 1 } },
+    { "NominalCapacity": 0.1, "Subdivision": 0.01, "CapacityTolerance": 0.005, "Class": "A", "Calibration": "TD", "ColorCode": { "Color": "White", "NumberOfRing": 1 } },
+    { "NominalCapacity": 0.2, "Subdivision": 0.001 ,"CapacityTolerance": 0.005, "Class": "A", "Calibration": "TD", "ColorCode": { "Color": "Blue", "NumberOfRing": 2 } },
+    { "NominalCapacity": 0.2, "Subdivision": 0.002, "CapacityTolerance": 0.005, "Class": "A", "Calibration": "TD", "ColorCode": { "Color": "White", "NumberOfRing": 2 } },
+    { "NominalCapacity": 0.2, "Subdivision": 0.01 ,"CapacityTolerance": 0.005, "Class": "A", "Calibration": "TD", "ColorCode": { "Color": "Black", "NumberOfRing": 1 } },
+    { "NominalCapacity": 0.5, "Subdivision": 0.005, "CapacityTolerance": 0.005, "Class": "A", "Calibration": "TD", "ColorCode": { "Color": "Green", "NumberOfRing": 1 } },
+    { "NominalCapacity": 0.5, "Subdivision": 0.01, "CapacityTolerance": 0.005, "Class": "A", "Calibration": "TD", "ColorCode": { "Color": "Yellow", "NumberOfRing": 2 } },
+    { "NominalCapacity": 1, "Subdivision": 0.01, "CapacityTolerance": 0.01, "Class": "A", "Calibration": "TD", "ColorCode": { "Color": "Yellow", "NumberOfRing": 1 } },
+    { "NominalCapacity": 1, "Subdivision": 0.01, "CapacityTolerance": 0.015, "Class": "B", "Calibration": "TD", "ColorCode": { "Color": "Yellow", "NumberOfRing": 1 } },
+    { "NominalCapacity": 2, "Subdivision": 0.02, "CapacityTolerance": 0.015, "Class": "A", "Calibration": "TD", "ColorCode": { "Color": "Yellow", "NumberOfRing": 1 } },
+    { "NominalCapacity": 2, "Subdivision": 0.02, "CapacityTolerance": 0.02, "Class": "B", "Calibration": "TD", "ColorCode": { "Color": "Yellow", "NumberOfRing": 1 } },
+    { "NominalCapacity": 3, "Subdivision": 0.02, "CapacityTolerance": 0.03, "Class": "A", "Calibration": "TD", "ColorCode": { "Color": "Blue", "NumberOfRing": 2 } },
+    { "NominalCapacity": 3, "Subdivision": 0.02, "CapacityTolerance": 0.05, "Class": "B", "Calibration": "TD", "ColorCode": { "Color": "Blue", "NumberOfRing": 2 } },
+    { "NominalCapacity": 5, "Subdivision": 0.05, "CapacityTolerance": 0.03, "Class": "A", "Calibration": "TD", "ColorCode": { "Color": "Red", "NumberOfRing": 1 } },
+    { "NominalCapacity": 5, "Subdivision": 0.05, "CapacityTolerance": 0.05, "Class": "B", "Calibration": "TD", "ColorCode": { "Color": "Red", "NumberOfRing": 1 } },
+    { "NominalCapacity": 10, "Subdivision": 0.1, "CapacityTolerance": 0.05, "Class": "A", "Calibration": "TD", "ColorCode": { "Color": "Orange", "NumberOfRing": 1 } },
+    { "NominalCapacity": 10, "Subdivision": 0.1, "CapacityTolerance": 0.1, "Class": "B", "Calibration": "TD", "ColorCode": { "Color": "Orange", "NumberOfRing": 1 } },
+    { "NominalCapacity": 20, "Subdivision": 0.1, "CapacityTolerance": 0.1, "Class": "A", "Calibration": "TD", "ColorCode": { "Color": "Yellow", "NumberOfRing": 2 } },
+    { "NominalCapacity": 20, "Subdivision": 0.1, "CapacityTolerance": 0.2, "Class": "B", "Calibration": "TD", "ColorCode": { "Color": "Yellow", "NumberOfRing": 2 } },
+    { "NominalCapacity": 25, "Subdivision": 0.1, "CapacityTolerance": 0.1, "Class": "A", "Calibration": "TD", "ColorCode": { "Color": "White", "NumberOfRing": 1 } },
+    { "NominalCapacity": 25, "Subdivision": 0.1, "CapacityTolerance": 0.2, "Class": "B", "Calibration": "TD", "ColorCode": { "Color": "White", "NumberOfRing": 1 } },
+    { "NominalCapacity": 50, "Subdivision": 0.2, "CapacityTolerance": 0.2, "Class": "A", "Calibration": "TD", "ColorCode": { "Color": "Black", "NumberOfRing": 2 } },
+    { "NominalCapacity": 50, "Subdivision": 0.2, "CapacityTolerance": 0.4, "Class": "B", "Calibration": "TD", "ColorCode": { "Color": "Black", "NumberOfRing": 2 } }
+  ]
+}

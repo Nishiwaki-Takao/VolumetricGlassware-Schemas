@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$comment": "2023/02/24 @Takao-Nishiwaki",
+  "$id": "https://github.com/Nishiwaki-Takao/VolumetricGlassware/blob/master/VolumetricGlassware/VolumeticPipette/VolumetricPipette_shema.json",
+  "description": "メスピペット(JIS R 3505 / ISO 1769) json schema",
+  "title": "GraduatedPipette.json schema",
+  "type": "object",
+  "properties": {
+    "GraduatedPipette": {
+      "description": "GraduatedPippet",
+      "type": "array",
+      "uniquness": true,
+      "items": {
+        "type": "object",
+        "properties": {
+          "NominalCapacity": {
+            "description": "メスピペットの容量",
+            "type": "number",
+            "enum": [ 0.1, 0.2, 0.3, 0.5, 1, 2, 3, 5, 10, 20, 25, 50 ]
+          },
+          "CapacityTolerance": {
+            "description": "メスピペットの許容誤差",
+            "type": "number",
+            "minimum": 0.005,
+            "maximum" : 0.4,
+            "enum": [ 0.005, 0.01, 0.015, 0.02, 0.03, 0.05, 0.1, 0.2, 0.4 ]
+          },
+          "Subdivision": {
+            "description": "メスピペットの目盛",
+            "type": "number",
+            "minimum": 0.001,
+            "maximum" : 0.2,
+            "enum": [0.001, 0.002, 0.005, 0.01, 0.02, 0.05, 0.1, 0.2]
+          },
+          "Class": {
+            "description": "メスピペットの等級",
+            "type": "string",
+            "enum": [ "A", "B", "SuperGrade", "HighGrade" ]
+          },
+          "Calibration": {
+            "description": "メスピペットの出受の定義",
+            "type": "string",
+            "enum" :  ["TD"]
+          },
+          "ColorCode": {
+            "description": "メスピペット上部のカラーコード",
+            "type": "object",
+            "properties": {
+              "Color": {
+                "type": "string",
+                "description": "メスピペットのカラーコードの色",
+                "enum": [ "Blue", "White", "Red", "Green", "Yellow", "Orange", "Black" ]
+              },
+              "NumberOfRing": {
+                "type": "integer",
+                "description": "メスピペットのカラーコードの帯数",
+                "enum": [ 1, 2 ]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

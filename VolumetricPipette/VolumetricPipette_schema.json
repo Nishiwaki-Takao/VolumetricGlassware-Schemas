@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$comment": "2023/02/24 @Takao-Nishiwaki",
+  "$id": "https://github.com/Nishiwaki-Takao/VolumetricGlassware/blob/master/VolumetricGlassware/VolumeticPipette/VolumetricPipette_shema.json",
+  "description": "ホールピペット(JIS R 3505 / ISO 1769) json schema",
+  "title": "VolumetricPipette.json schema",
+  "type": "object",
+  "properties": {
+    "VolumetricPipette": {
+      "description": "VolumetricPipette",
+      "type": "array",
+      "uniquness": true,
+      "items": {
+        "type": "object",
+        "properties": {
+          "capacity": {
+            "description": "ホールピペットの容量",
+            "type": "number",
+            "enum": [ 0.1, 0.15, 0.2, 0.25, 0.3, 0.4, 0.5, 1, 1.5, 2, 2.5, 3, 4, 5, 6, 7, 8, 9, 10, 11, 15, 17.5, 17.6, 20, 25, 30, 40, 50, 75, 100, 150, 200 ]
+          },
+          "tolerance": {
+            "description": "ホールピペットの許容誤差",
+            "type": "number",
+            "minimum": 0.005,
+            "maximum" : 0.2,
+            "anyof": [ { "multipleOf": 0.005 }, { "multipleOf": 0.01 }, { "multipleOf": 0.015 }, { "multipleOf": 0.02 }, { "multipleOf": 0.03 }, { "multipleOf": 0.04 }, { "multipleOf": 0.05 }, { "multipleOf": 0.1 }, { "multipleOf": 0.15 } ]
+          },
+          "grade": {
+            "description": "ホールピペットの等級",
+            "type": "string",
+            "enum": [ "A", "B", "SuperGrade", "HighGrade" ]
+          },
+          "calibration": {
+            "description": "ホールピペットの出受の定義",
+            "type": "string",
+            "enum" :  ["TD"]
+          },
+          "color_code": {
+            "description": "ホールピペット上部のカラーコード",
+            "type": "object",
+            "properties": {
+              "color": {
+                "type": "string",
+                "description": "ホールピペットのカラーコードの色",
+                "enum": [ "Blue", "White", "Red", "Green", "Yellow", "Orange", "Black" ]
+              },
+              "number_of_ring": {
+                "type": "integer",
+                "description": "ホールピペットのカラーコードの帯数",
+                "enum": [ 1, 2 ]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

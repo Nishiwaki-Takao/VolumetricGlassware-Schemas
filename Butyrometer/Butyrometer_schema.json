@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$comment": "2023/02/24 @Takao-Nishiwaki",
+  "$id": "https://github.com/Nishiwaki-Takao/VolumetricGlassware/blob/master/VolumetricGlassware/Butyrometer/Butyrometer_shema.json",
+  "description": "乳脂計(JIS R 3505 / ISO 1769) json schema",
+  "title": "Butyrometer.json schema",
+  "type": "object",
+  "properties": {
+    "Butyrometer": {
+      "description": "Butyrometer",
+      "type": "array",
+      "uniquness": true,
+      "items": {
+        "type": "object",
+        "properties": {
+          "NominalCapacity": {
+            "description": "乳脂計の容量あるいは目盛部の容量",
+            "type": "number",
+            "enum": [ 0.625, 0.750, 0.875, 1.000, 1.125, 1.6, 5.0 ]
+          },
+          "BodyCapacity": {
+            "description": "乳脂計胴部の容量、その最大値と最小値",
+            "type": "object",
+            "properties": {
+              "Max": {
+                "type": "integer",
+                "description": "乳脂計胴部の最大容量",
+                "enum": [ 22, 50]
+              },
+              "Min": {
+                "type": "integer",
+                "description": "乳脂計胴部の最小容量",
+                "enum": [ 21, 45]
+              }
+            }
+          },
+          "Subdivision": {
+            "description": "乳脂計の目盛",
+            "type": "number",
+            "enum": [ 0.0125, 0.02, 0.05 ]
+          },
+          "CapacityTolerance": {
+            "description": "乳脂計の許容誤差",
+            "type": "number",
+            "enum": [0.0125, 0.02, 0.05]
+          },
+          "Type": {
+            "description": "乳脂計の形式",
+            "type": "string",
+            "enum": [ "Gerber", "Babcock" ]
+          }
+        }
+      }
+    }
+  }
+}
+

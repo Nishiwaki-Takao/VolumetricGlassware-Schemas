@@ -1,0 +1,11 @@
+{
+   "Butyrometer": [
+    { "NominalCapacity": 0.625,  "Subdivision": 0.0125,"BodyCapacity": { "Max": 22, "Min": 21 }, "CapacityTolerance": 0.0125, "Type": "Gerber" },
+    { "NominalCapacity": 0.750,  "Subdivision": 0.0125,"BodyCapacity": { "Max": 22, "Min": 21 }, "CapacityTolerance": 0.0125, "Type": "Gerber" },
+    { "NominalCapacity": 0.875,  "Subdivision": 0.0125,"BodyCapacity": { "Max": 22, "Min": 21 }, "CapacityTolerance": 0.0125, "Type": "Gerber" },
+    { "NominalCapacity": 1.000,  "Subdivision": 0.0125,"BodyCapacity": { "Max": 22, "Min": 21 }, "CapacityTolerance": 0.0125, "Type": "Gerber" },
+    { "NominalCapacity": 1.125,  "Subdivision": 0.0125,"BodyCapacity": { "Max": 22, "Min": 21 }, "CapacityTolerance": 0.0125, "Type": "Gerber" },
+    { "NominalCapacity": 1.6,  "Subdivision": 0.02 ,"BodyCapacity": { "Max": 50, "Min": 45 }, "CapacityTolerance": 0.02, "Type": "Babcock" },
+    { "NominalCapacity": 5.0,  "Subdivision": 0.05 ,"BodyCapacity": { "Max": 50, "Min": 45 }, "CapacityTolerance": 0.05, "Type": "Babcock" }
+   ]
+}

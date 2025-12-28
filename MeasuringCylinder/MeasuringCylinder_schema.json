@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$comment": "2023/02/24 @Takao-Nishiwaki",
+  "$id": "https://github.com/Nishiwaki-Takao/VolumetricGlassware/blob/master/VolumetricGlassware/VolumeticFlask/MeasuringCylinder_shema.json",
+  "description": "メスシリンダー(JIS R 3505 / ISO 1769) json schema",
+  "title": "MeasuringCylinder.json schema",
+  "type": "object",
+  "properties": {
+    "MeasuringCylinder": {
+      "description": "MeasuringCylinder",
+      "type": "array",
+      "uniquness": true,
+      "items": {
+        "type": "object",
+        "properties": {
+          "NominalCapacity": {
+            "description": "メスシリンダーの容量",
+            "type": "number",
+            "enum": [5, 10, 20, 25, 50, 100, 200, 250, 300, 500, 1000, 2000 ]
+          },
+          "CapacityTolerance": {
+            "description": "メスシリンダーの許容誤差",
+            "type": "number",
+            "minimum": 0.025,
+            "maximum": 10,
+            "enum": [ 0.025, 0.05, 0.1, 0.2, 0.5, 1, 2, 5, 10 ]
+            },
+          "Subdivision": {
+            "description": "メスシリンダーの目盛",
+            "type": "number",
+            "minimum": 0.001,
+            "maximum" : 0.2,
+            "enum": [0.1, 0.2, 0.5, 1, 2, 5, 10, 20]
+          },
+          "Class": {
+            "description": "メスシリンダーの等級",
+            "type": "string",
+            "enum": [ "A", "B"]
+          },
+          "Calibration": {
+            "description": "メスシリンダーの出受の定義",
+            "type": "string",
+            "enum" :  ["TC"]
+          }
+         }
+        }
+       }
+      }
+}
