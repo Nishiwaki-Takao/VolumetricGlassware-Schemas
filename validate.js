@@ -2,7 +2,7 @@ import fs from "fs";
 import Ajv from "ajv/dist/2020.js";
 
 const map = JSON.parse(fs.readFileSync("validation-map.json", "utf8"));
-const ajv = new Ajv2020({ allErrors: true, strict: false });
+const ajv = new Ajv({ allErrors: true, strict: false });
 
 function validatePair(schemaPath, dataPath) {
   const schema = JSON.parse(fs.readFileSync(schemaPath, "utf8"));
