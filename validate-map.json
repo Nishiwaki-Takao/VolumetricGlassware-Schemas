@@ -1,0 +1,28 @@
+{
+  "pairs": [
+    {
+      "schema": "Burette/Burette_schema.json",
+      "data": "Burette/Burette.json"
+    },
+    {
+      "schema": "VolumetricFlask/VolumetricFlask_schema.json",
+      "data": "VolumetricFlask/VolumetricFlask.json"
+    },
+    {
+      "schema":"GraduatedPipette/GraduatedPipette_schema.json",
+      "data":"GraduatedPipette/GraduatedPipette.json"
+    },
+    {
+      "schema":"MeasuringCylinder/MeasuringCylinder_schema.json",
+      "data":"MeasuringCylinder/MeasuringCylinder.json"
+    },
+    {
+      "schema":"VolumetricPipette/VolumetricPipette_schema.json",
+      "data":"VolumetricPipette/VolumetricPipette.json"
+    },
+    {
+      "schema":"Butyrometer/Butyrometer_schema.json",
+      "data":"Butyrometer/Butyrometer.json"
+    }
+  ]
+}
