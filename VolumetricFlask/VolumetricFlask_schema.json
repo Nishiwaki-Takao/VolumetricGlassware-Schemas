@@ -66,14 +66,13 @@
               "dscoreMin": {
                 "type": "integer",
                 "description": "メスフラスコの目盛線部分の最小内径"
-                },
+                }
+            },
               "if": {
                 "properties": { "NarrowWide": { "const": "Wide" } }
               },
             "then": {"required": ["dscoreMin"]
-                },
-           "else": {}
-           }
+                }
           }
          }
         }
