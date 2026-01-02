@@ -9,7 +9,7 @@
     "GraduatedPipette": {
       "description": "GraduatedPippet",
       "type": "array",
-      "uniquness": true,
+      "uniqueItems": true,
       "items": {
         "type": "object",
         "properties": {
@@ -64,7 +64,8 @@
   "Class",
   "Calibration",
   "ColorCode"
-]
+],
+"additionalProperties": false
       }
     }
   }
