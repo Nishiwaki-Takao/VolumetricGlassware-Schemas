@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$comment": "2023/02/24 @Takao-Nishiwaki",
-  "$id": "https://github.com/Nishiwaki-Takao/VolumetricGlassware/blob/master/VolumetricGlassware/VolumeticPipette/VolumetricPipette_shema.json",
+  "$id": "https://nishiwaki-takao.github.io/VolumetricGlassware-Schemas/schemas/GraduatedPipette_schema.json",
   "description": "メスピペット(JIS R 3505 / ISO 1769) json schema",
   "title": "GraduatedPipette.json schema",
   "type": "object",
