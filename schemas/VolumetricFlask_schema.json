@@ -9,11 +9,9 @@
     "VolumetricFlask": {
       "description": "VolumetricFlask",
       "type": "array",
-      "uniqueItems": true,
+      "uniquness": true,
       "items": {
         "type": "object",
-        "required": ["NominalCapacity","CapacityTolerance","Class","Calibration","Neck"],
-        "additionalProperties": false,
         "properties": {
           "NominalCapacity": {
             "description": "メスフラスコの容量",
@@ -23,20 +21,9 @@
           "CapacityTolerance": {
             "description": "メスフラスコの許容誤差",
             "type": "number",
-            "anyOf": [ 
-                {"enum" :[0.025,0.05,0.1]},
-                {"enum" :[0.04,0.08,0.16]},
-                {"enum": [0.06,0.12,0.24]},
-                {"enum": [0.1,0.2,0.4]},
-                {"enum": [0.15,0.3,0.6]},
-                {"enum": [0.25,0.5,1.0]},
-                {"enum": [0.4,0.8,1.6]},
-                {"enum": [0.6,1.2,2.4]},
-                {"enum": [1.5,3.0]},
-                {"enum": [2.0,4.0]},
-                {"enum": [5,10]},
-                {"enum": [0.2,0.25,0.3]}
-            ]
+            "minimum": 0.025,
+            "maximum": 10,
+            "anyOf": [ { "multipleOf": 0.025 }, { "multipleOf": 0.02 }, { "multipleOf": 0.04 }, { "multipleOf": 0.05 }, { "multipleOf": 0.06 }, { "multipleOf": 0.08 }, { "multipleOf": 0.1 }, { "multipleOf": 0.12 }, { "multipleOf": 0.15 }, { "multipleOf": 0.2 }, { "multipleOf": 0.25 }, { "multipleOf": 0.3 }, { "multipleOf": 0.4 }, { "multipleOf": 0.6 }, { "multipleOf": 1.5 }, { "multipleOf": 2.0 }, { "multipleOf": 2.0 }, { "multipleOf": 5.0 } ]
             },
           "Class": {
             "description": "メスフラスコの等級",
@@ -51,8 +38,6 @@
            "Neck": {
             "description": "メスフラスコの目盛線部分の形状に関する情報",
             "type": "object",
-            "required": ["NarrowWide","dscoreMax"],
-            "additionalProperties": false,
             "properties": {
               "NarrowWide": {
                 "type": "string",
@@ -62,20 +47,23 @@
               "dscoreMax": {
                 "type": "integer",
                 "description": "メスフラスコの目盛線部分の最大内径"
-              },
-              "dscoreMin": {
-                "type": "integer",
-                "description": "メスフラスコの目盛線部分の最小内径"
-                }
-            },
+              }
+                },
               "if": {
                 "properties": { "NarrowWide": { "const": "Wide" } }
               },
-            "then": {"required": ["dscoreMin"]
-                }
+            "then": {
+              "properties": {
+                "dscoreMin": {
+                "type": "integer",
+                "description": "メスフラスコの目盛線部分の最小内径"
+                },
+           "else": {}
+           }
           }
          }
         }
       }
     }
+  }
 }

@@ -9,11 +9,9 @@
     "VolumetricPipette": {
       "description": "VolumetricPipette",
       "type": "array",
-      "uniqueItems": true,
+      "uniquness": true,
       "items": {
         "type": "object",
-        "required": ["capacity","tolerance","grade","calibration","color_code"],
-        "additionalProperties": false,
         "properties": {
           "capacity": {
             "description": "ホールピペットの容量",
@@ -23,17 +21,9 @@
           "tolerance": {
             "description": "ホールピペットの許容誤差",
             "type": "number",
-            "anyof": [ 
-              {"enum":[0.005,0.01]},
-              {"enum":[0.01,0.02]},
-              {"enum":[0.015,0.03]},
-              {"enum":[0.02,0.04]},
-              {"enum":[0.02,0.06]},
-              {"enum":[0.03,0.06]},
-              {"enum":[0.05,0.1]},
-              {"enum":[0.08,0.15]},
-              {"enum":[0.1,0.2]}
-          ]
+            "minimum": 0.005,
+            "maximum" : 0.2,
+            "anyof": [ { "multipleOf": 0.005 }, { "multipleOf": 0.01 }, { "multipleOf": 0.015 }, { "multipleOf": 0.02 }, { "multipleOf": 0.03 }, { "multipleOf": 0.04 }, { "multipleOf": 0.05 }, { "multipleOf": 0.1 }, { "multipleOf": 0.15 } ]
           },
           "grade": {
             "description": "ホールピペットの等級",
@@ -48,8 +38,6 @@
           "color_code": {
             "description": "ホールピペット上部のカラーコード",
             "type": "object",
-            "required": ["color","number_of_ring"],
-            "additionalProperties": false,
             "properties": {
               "color": {
                 "type": "string",

@@ -9,7 +9,7 @@
     "Butyrometer": {
       "description": "Butyrometer",
       "type": "array",
-      "uniqueItems": true,
+      "uniquness": true,
       "items": {
         "type": "object",
         "properties": {
@@ -32,9 +32,7 @@
                 "description": "乳脂計胴部の最小容量",
                 "enum": [ 21, 45]
               }
-            },
-            "required": ["Max","Min"],
-            "additionalProperties": false
+            }
           },
           "Subdivision": {
             "description": "乳脂計の目盛",
@@ -51,15 +49,7 @@
             "type": "string",
             "enum": [ "Gerber", "Babcock" ]
           }
-        },
-        "required": [
-          "NominalCapacity",
-          "BodyCapacity",
-          "Subdivision",
-          "CapacityTolerance",
-          "Type"
-        ] ,
-        "additionalProperties": false
+        }
       }
     }
   }

@@ -1,28 +1,28 @@
 {
   "pairs": [
     {
-      "schema": "Burette/Burette_schema.json",
-      "data": "Burette/Burette.json"
+      "schema": "shemas/Burette_schema.json",
+      "data": "data/Burette/Burette.json"
     },
     {
-      "schema": "VolumetricFlask/VolumetricFlask_schema.json",
-      "data": "VolumetricFlask/VolumetricFlask.json"
+      "schema": "shemas/VolumetricFlask/VolumetricFlask_schema.json",
+      "data": "data/VolumetricFlask/VolumetricFlask.json"
     },
     {
-      "schema":"GraduatedPipette/GraduatedPipette_schema.json",
-      "data":"GraduatedPipette/GraduatedPipette.json"
+      "schema":"shemas/GraduatedPipette/GraduatedPipette_schema.json",
+      "data":"data/GraduatedPipette/GraduatedPipette.json"
     },
     {
-      "schema":"MeasuringCylinder/MeasuringCylinder_schema.json",
-      "data":"MeasuringCylinder/MeasuringCylinder.json"
+      "schema":"shemas/MeasuringCylinder/MeasuringCylinder_schema.json",
+      "data":"data/MeasuringCylinder/MeasuringCylinder.json"
     },
     {
-      "schema":"VolumetricPipette/VolumetricPipette_schema.json",
-      "data":"VolumetricPipette/VolumetricPipette.json"
+      "schema":"shemas/VolumetricPipette/VolumetricPipette_schema.json",
+      "data":"data/VolumetricPipette/VolumetricPipette.json"
     },
     {
-      "schema":"Butyrometer/Butyrometer_schema.json",
-      "data":"Butyrometer/Butyrometer.json"
+      "schema":"shemas/Butyrometer/Butyrometer_schema.json",
+      "data":"data/Butyrometer/Butyrometer.json"
     }
   ]
 }
