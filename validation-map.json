@@ -5,23 +5,23 @@
       "data": "data/Burette/Burette.json"
     },
     {
-      "schema": "schemas/VolumetricFlask/VolumetricFlask_schema.json",
+      "schema": "schemas/VolumetricFlask_schema.json",
       "data": "data/VolumetricFlask/VolumetricFlask.json"
     },
     {
-      "schema":"schemas/GraduatedPipette/GraduatedPipette_schema.json",
+      "schema":"schemas/GraduatedPipette_schema.json",
       "data":"data/GraduatedPipette/GraduatedPipette.json"
     },
     {
-      "schema":"schemas/MeasuringCylinder/MeasuringCylinder_schema.json",
+      "schema":"schemas/MeasuringCylinder_schema.json",
       "data":"data/MeasuringCylinder/MeasuringCylinder.json"
     },
     {
-      "schema":"schemas/VolumetricPipette/VolumetricPipette_schema.json",
+      "schema":"schemas/VolumetricPipette_schema.json",
       "data":"data/VolumetricPipette/VolumetricPipette.json"
     },
     {
-      "schema":"schemas/Butyrometer/Butyrometer_schema.json",
+      "schema":"schemas/Butyrometer_schema.json",
       "data":"data/Butyrometer/Butyrometer.json"
     }
   ]
