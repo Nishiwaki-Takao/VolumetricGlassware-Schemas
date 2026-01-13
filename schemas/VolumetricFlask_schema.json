@@ -47,16 +47,15 @@
               "dscoreMax": {
                 "type": "integer",
                 "description": "メスフラスコの目盛線部分の最大内径"
-              }
+              },
+              "dscoreMin": {
+                "type": "integer",
+                "description": "メスフラスコの目盛線部分の最小内径"
                 },
               "if": {
                 "properties": { "NarrowWide": { "const": "Wide" } }
               },
-            "then": {
-              "properties": {
-                "dscoreMin": {
-                "type": "integer",
-                "description": "メスフラスコの目盛線部分の最小内径"
+            "then": {"required": ["dscoreMin"]
                 },
            "else": {}
            }
@@ -65,5 +64,4 @@
         }
       }
     }
-  }
 }
