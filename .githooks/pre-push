@@ -5,6 +5,7 @@ echo "🚨 pre-push: validation"
 
 NPM="/usr/bin/npm"
 
-"$NPM" run validate
+
+/usr/bin/npm run validate
 
 echo "✅ pre-push passed"
