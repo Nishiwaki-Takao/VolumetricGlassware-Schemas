@@ -9,9 +9,11 @@
     "MeasuringCylinder": {
       "description": "MeasuringCylinder",
       "type": "array",
-      "uniquness": true,
+      "uniqueItems": true,
       "items": {
         "type": "object",
+        "required": ["NominalCapacit","CapacityTolerance","Subdivision","Class","Calibration"],
+        "additionalProperties": false,
         "properties": {
           "NominalCapacity": {
             "description": "メスシリンダーの容量",

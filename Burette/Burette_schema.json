@@ -9,7 +9,7 @@
     "Burette": {
       "description": "Burette",
       "type": "array",
-      "uniquness": true,
+      "uniqueItems": true,
       "items": {
         "type": "object",
         "properties": {
@@ -47,7 +47,16 @@
             "type": "string",
             "enum" :  ["Graduated", "Mohr"]
           }
-        }
+        },
+        "required": [
+         "NominalCapacity",
+         "CapacityTolerance",
+         "Subdivision",
+         "Class",
+         "Calibration",
+         "Type"
+        ],
+        "additionalProperties": false
       }
     }
   }
