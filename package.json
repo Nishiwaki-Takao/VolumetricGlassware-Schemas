@@ -1,6 +1,7 @@
 {
   "type": "module",
   "scripts": {
+    "prepare": "git config core.hooksPath .githooks",
     "validate": "node validate.js"
   },
   "dependencies": {
