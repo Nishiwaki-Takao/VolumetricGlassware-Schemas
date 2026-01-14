@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 set -e
-
+export PATH="/usr/local/bin:/snap/bin:/usr/bin:$PATH"
 echo "🚨 pre-push: validation"
 
 NPM=$(which npm || true)
