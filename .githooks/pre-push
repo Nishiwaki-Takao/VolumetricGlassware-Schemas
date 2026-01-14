@@ -1,14 +1,9 @@
 #!/usr/bin/env bash
 set -e
-export PATH="/usr/local/bin:/snap/bin:/usr/bin:$PATH"
+
 echo "🚨 pre-push: validation"
 
-NPM=$(which npm || true)
-
-if [ -z "$NPM" ]; then
-  echo "❌ npm not found in PATH"
-  exit 1
-fi
+NPM="/usr/bin/npm"
 
 "$NPM" run validate
 
