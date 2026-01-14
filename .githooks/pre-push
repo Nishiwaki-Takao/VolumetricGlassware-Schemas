@@ -3,10 +3,13 @@ set -e
 
 echo "🚨 pre-push: validation"
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+NPM=$(which npm || true)
 
-nvm use 20 >/dev/null
+if [ -z "$NPM" ]; then
+  echo "❌ npm not found in PATH"
+  exit 1
+fi
 
-npm ci
-npm run validate
+"$NPM" run validate
+
+echo "✅ pre-push passed"
