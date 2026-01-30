@@ -6,42 +6,99 @@
   "title": "MeasuringCylinder.json schema",
   "type": "object",
   "properties": {
-    "MeasuringCylinder": {
-      "description": "MeasuringCylinder",
+    "Type": {
+      "description": "データ種別",
+      "type": "string",
+      "const": "MeasuringCylinder"
+    },
+    "Items": {
+      "description": "MeasuringCylinder items",
       "type": "array",
       "uniqueItems": true,
       "items": {
         "type": "object",
-        "required": ["NominalCapacit","CapacityTolerance","Subdivision","Class","Calibration"],
+        "required": [
+          "NominalCapacity",
+          "CapacityTolerance",
+          "Subdivision",
+          "Class",
+          "Calibration"
+        ],
         "additionalProperties": false,
         "properties": {
           "NominalCapacity": {
             "description": "メスシリンダーの容量",
             "type": "number",
-            "enum": [5, 10, 20, 25, 50, 100, 200, 250, 300, 500, 1000, 2000 ]
+            "enum": [
+              5,
+              10,
+              20,
+              25,
+              50,
+              100,
+              200,
+              250,
+              300,
+              500,
+              1000,
+              2000
+            ]
           },
           "CapacityTolerance": {
             "description": "メスシリンダーの許容誤差",
             "type": "number",
-            "enum": [ 0.025, 0.05, 0.1, 0.2, 0.5, 1, 2, 5, 10 ]
-            },
+            "enum": [
+              0.1,
+              0.2,
+              0.25,
+              0.4,
+              0.5,
+              1,
+              1.5,
+              2,
+              2.5,
+              3,
+              5,
+              10,
+              20
+            ]
+          },
           "Subdivision": {
             "description": "メスシリンダーの目盛",
             "type": "number",
-            "enum": [0.1, 0.2, 0.5, 1, 2, 5, 10, 20]
+            "enum": [
+              0.1,
+              0.2,
+              0.5,
+              1,
+              2,
+              5,
+              10,
+              20
+            ]
           },
           "Class": {
             "description": "メスシリンダーの等級",
             "type": "string",
-            "enum": [ "A", "B"]
+            "enum": [
+              "A",
+              "B"
+            ]
           },
           "Calibration": {
             "description": "メスシリンダーの出受の定義",
             "type": "string",
-            "enum" :  ["TC"]
+            "enum": [
+              "TC"
+            ]
           }
-         }
         }
-       }
       }
+    }
+  },
+  "required": [
+    "Type",
+    "Items"
+  ],
+  "additionalProperties": false
 }

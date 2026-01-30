@@ -6,65 +6,180 @@
   "title": "VolumetricPipette.json schema",
   "type": "object",
   "properties": {
-    "VolumetricPipette": {
-      "description": "VolumetricPipette",
+    "Type": {
+      "description": "データ種別",
+      "type": "string",
+      "const": "VolumetricPipette"
+    },
+    "Items": {
+      "description": "VolumetricPipette items",
       "type": "array",
       "uniqueItems": true,
       "items": {
         "type": "object",
-        "required": ["capacity","tolerance","grade","calibration","color_code"],
+        "required": [
+          "capacity",
+          "tolerance",
+          "grade",
+          "calibration",
+          "color_code"
+        ],
         "additionalProperties": false,
         "properties": {
           "capacity": {
             "description": "ホールピペットの容量",
             "type": "number",
-            "enum": [ 0.1, 0.15, 0.2, 0.25, 0.3, 0.4, 0.5, 1, 1.5, 2, 2.5, 3, 4, 5, 6, 7, 8, 9, 10, 11, 15, 17.5, 17.6, 20, 25, 30, 40, 50, 75, 100, 150, 200 ]
+            "enum": [
+              0.1,
+              0.15,
+              0.2,
+              0.25,
+              0.3,
+              0.4,
+              0.5,
+              1,
+              1.5,
+              2,
+              2.5,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              15,
+              17.5,
+              17.6,
+              20,
+              25,
+              30,
+              40,
+              50,
+              75,
+              100,
+              150,
+              200
+            ]
           },
           "tolerance": {
             "description": "ホールピペットの許容誤差",
             "type": "number",
-            "anyof": [ 
-              {"enum":[0.005,0.01]},
-              {"enum":[0.01,0.02]},
-              {"enum":[0.015,0.03]},
-              {"enum":[0.02,0.04]},
-              {"enum":[0.02,0.06]},
-              {"enum":[0.03,0.06]},
-              {"enum":[0.05,0.1]},
-              {"enum":[0.08,0.15]},
-              {"enum":[0.1,0.2]}
-          ]
+            "anyof": [
+              {
+                "enum": [
+                  0.005,
+                  0.01
+                ]
+              },
+              {
+                "enum": [
+                  0.01,
+                  0.02
+                ]
+              },
+              {
+                "enum": [
+                  0.015,
+                  0.03
+                ]
+              },
+              {
+                "enum": [
+                  0.02,
+                  0.04
+                ]
+              },
+              {
+                "enum": [
+                  0.02,
+                  0.06
+                ]
+              },
+              {
+                "enum": [
+                  0.03,
+                  0.06
+                ]
+              },
+              {
+                "enum": [
+                  0.05,
+                  0.1
+                ]
+              },
+              {
+                "enum": [
+                  0.08,
+                  0.15
+                ]
+              },
+              {
+                "enum": [
+                  0.1,
+                  0.2
+                ]
+              }
+            ]
           },
           "grade": {
             "description": "ホールピペットの等級",
             "type": "string",
-            "enum": [ "A", "B", "SuperGrade", "HighGrade" ]
+            "enum": [
+              "A",
+              "B",
+              "SuperGrade",
+              "HighGrade"
+            ]
           },
           "calibration": {
             "description": "ホールピペットの出受の定義",
             "type": "string",
-            "enum" :  ["TD"]
+            "enum": [
+              "TD"
+            ]
           },
           "color_code": {
             "description": "ホールピペット上部のカラーコード",
             "type": "object",
-            "required": ["color","number_of_ring"],
+            "required": [
+              "color",
+              "number_of_ring"
+            ],
             "additionalProperties": false,
             "properties": {
               "color": {
                 "type": "string",
                 "description": "ホールピペットのカラーコードの色",
-                "enum": [ "Blue", "White", "Red", "Green", "Yellow", "Orange", "Black" ]
+                "enum": [
+                  "Blue",
+                  "White",
+                  "Red",
+                  "Green",
+                  "Yellow",
+                  "Orange",
+                  "Black"
+                ]
               },
               "number_of_ring": {
                 "type": "integer",
                 "description": "ホールピペットのカラーコードの帯数",
-                "enum": [ 1, 2 ]
+                "enum": [
+                  1,
+                  2
+                ]
               }
             }
           }
         }
       }
     }
-  }
+  },
+  "required": [
+    "Type",
+    "Items"
+  ],
+  "additionalProperties": false
 }

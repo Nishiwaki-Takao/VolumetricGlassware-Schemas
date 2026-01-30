@@ -1,0 +1,630 @@
+{
+  "Type": "VolumetricFlask",
+  "Items": [
+    {
+      "NominalCapacity": 5,
+      "CapacityTolerance": 0.025,
+      "Class": "A",
+      "Calibration": "TC",
+      "Neck": {
+        "NarrowWide": "Narrow",
+        "dscoreMax": 10
+      }
+    },
+    {
+      "NominalCapacity": 5,
+      "CapacityTolerance": 0.05,
+      "Class": "B",
+      "Calibration": "TC",
+      "Neck": {
+        "NarrowWide": "Narrow",
+        "dscoreMax": 10
+      }
+    },
+    {
+      "NominalCapacity": 5,
+      "CapacityTolerance": 0.05,
+      "Class": "A",
+      "Calibration": "TD",
+      "Neck": {
+        "NarrowWide": "Narrow",
+        "dscoreMax": 10
+      }
+    },
+    {
+      "NominalCapacity": 5,
+      "CapacityTolerance": 0.1,
+      "Class": "B",
+      "Calibration": "TD",
+      "Neck": {
+        "NarrowWide": "Narrow",
+        "dscoreMax": 10
+      }
+    },
+    {
+      "NominalCapacity": 10,
+      "CapacityTolerance": 0.025,
+      "Class": "A",
+      "Calibration": "TC",
+      "Neck": {
+        "NarrowWide": "Narrow",
+        "dscoreMax": 10
+      }
+    },
+    {
+      "NominalCapacity": 10,
+      "CapacityTolerance": 0.05,
+      "Class": "B",
+      "Calibration": "TC",
+      "Neck": {
+        "NarrowWide": "Narrow",
+        "dscoreMax": 10
+      }
+    },
+    {
+      "NominalCapacity": 10,
+      "CapacityTolerance": 0.05,
+      "Class": "A",
+      "Calibration": "TD",
+      "Neck": {
+        "NarrowWide": "Narrow",
+        "dscoreMax": 10
+      }
+    },
+    {
+      "NominalCapacity": 10,
+      "CapacityTolerance": 0.1,
+      "Class": "B",
+      "Calibration": "TD",
+      "Neck": {
+        "NarrowWide": "Narrow",
+        "dscoreMax": 10
+      }
+    },
+    {
+      "NominalCapacity": 20,
+      "CapacityTolerance": 0.04,
+      "Class": "A",
+      "Calibration": "TC",
+      "Neck": {
+        "NarrowWide": "Narrow",
+        "dscoreMax": 12
+      }
+    },
+    {
+      "NominalCapacity": 20,
+      "CapacityTolerance": 0.08,
+      "Class": "B",
+      "Calibration": "TC",
+      "Neck": {
+        "NarrowWide": "Narrow",
+        "dscoreMax": 12
+      }
+    },
+    {
+      "NominalCapacity": 20,
+      "CapacityTolerance": 0.08,
+      "Class": "A",
+      "Calibration": "TD",
+      "Neck": {
+        "NarrowWide": "Narrow",
+        "dscoreMax": 12
+      }
+    },
+    {
+      "NominalCapacity": 20,
+      "CapacityTolerance": 0.16,
+      "Class": "B",
+      "Calibration": "TD",
+      "Neck": {
+        "NarrowWide": "Narrow",
+        "dscoreMax": 12
+      }
+    },
+    {
+      "NominalCapacity": 25,
+      "CapacityTolerance": 0.04,
+      "Class": "A",
+      "Calibration": "TC",
+      "Neck": {
+        "NarrowWide": "Narrow",
+        "dscoreMax": 12
+      }
+    },
+    {
+      "NominalCapacity": 25,
+      "CapacityTolerance": 0.08,
+      "Class": "B",
+      "Calibration": "TC",
+      "Neck": {
+        "NarrowWide": "Narrow",
+        "dscoreMax": 12
+      }
+    },
+    {
+      "NominalCapacity": 25,
+      "CapacityTolerance": 0.08,
+      "Class": "A",
+      "Calibration": "TD",
+      "Neck": {
+        "NarrowWide": "Narrow",
+        "dscoreMax": 12
+      }
+    },
+    {
+      "NominalCapacity": 25,
+      "CapacityTolerance": 0.16,
+      "Class": "B",
+      "Calibration": "TD",
+      "Neck": {
+        "NarrowWide": "Narrow",
+        "dscoreMax": 12
+      }
+    },
+    {
+      "NominalCapacity": 50,
+      "CapacityTolerance": 0.06,
+      "Class": "A",
+      "Calibration": "TC",
+      "Neck": {
+        "NarrowWide": "Narrow",
+        "dscoreMax": 14
+      }
+    },
+    {
+      "NominalCapacity": 50,
+      "CapacityTolerance": 0.12,
+      "Class": "B",
+      "Calibration": "TC",
+      "Neck": {
+        "NarrowWide": "Narrow",
+        "dscoreMax": 14
+      }
+    },
+    {
+      "NominalCapacity": 50,
+      "CapacityTolerance": 0.12,
+      "Class": "A",
+      "Calibration": "TD",
+      "Neck": {
+        "NarrowWide": "Narrow",
+        "dscoreMax": 14
+      }
+    },
+    {
+      "NominalCapacity": 50,
+      "CapacityTolerance": 0.24,
+      "Class": "B",
+      "Calibration": "TD",
+      "Neck": {
+        "NarrowWide": "Narrow",
+        "dscoreMax": 14
+      }
+    },
+    {
+      "NominalCapacity": 100,
+      "CapacityTolerance": 0.1,
+      "Class": "A",
+      "Calibration": "TC",
+      "Neck": {
+        "NarrowWide": "Narrow",
+        "dscoreMax": 14
+      }
+    },
+    {
+      "NominalCapacity": 100,
+      "CapacityTolerance": 0.2,
+      "Class": "B",
+      "Calibration": "TC",
+      "Neck": {
+        "NarrowWide": "Narrow",
+        "dscoreMax": 14
+      }
+    },
+    {
+      "NominalCapacity": 100,
+      "CapacityTolerance": 0.2,
+      "Class": "A",
+      "Calibration": "TD",
+      "Neck": {
+        "NarrowWide": "Narrow",
+        "dscoreMax": 14
+      }
+    },
+    {
+      "NominalCapacity": 100,
+      "CapacityTolerance": 0.4,
+      "Class": "B",
+      "Calibration": "TD",
+      "Neck": {
+        "NarrowWide": "Narrow",
+        "dscoreMax": 14
+      }
+    },
+    {
+      "NominalCapacity": 200,
+      "CapacityTolerance": 0.15,
+      "Class": "A",
+      "Calibration": "TC",
+      "Neck": {
+        "NarrowWide": "Narrow",
+        "dscoreMax": 17
+      }
+    },
+    {
+      "NominalCapacity": 200,
+      "CapacityTolerance": 0.3,
+      "Class": "B",
+      "Calibration": "TC",
+      "Neck": {
+        "NarrowWide": "Narrow",
+        "dscoreMax": 17
+      }
+    },
+    {
+      "NominalCapacity": 200,
+      "CapacityTolerance": 0.3,
+      "Class": "A",
+      "Calibration": "TD",
+      "Neck": {
+        "NarrowWide": "Narrow",
+        "dscoreMax": 17
+      }
+    },
+    {
+      "NominalCapacity": 200,
+      "CapacityTolerance": 0.6,
+      "Class": "B",
+      "Calibration": "TD",
+      "Neck": {
+        "NarrowWide": "Narrow",
+        "dscoreMax": 17
+      }
+    },
+    {
+      "NominalCapacity": 250,
+      "CapacityTolerance": 0.15,
+      "Class": "A",
+      "Calibration": "TC",
+      "Neck": {
+        "NarrowWide": "Narrow",
+        "dscoreMax": 17
+      }
+    },
+    {
+      "NominalCapacity": 250,
+      "CapacityTolerance": 0.3,
+      "Class": "B",
+      "Calibration": "TC",
+      "Neck": {
+        "NarrowWide": "Narrow",
+        "dscoreMax": 17
+      }
+    },
+    {
+      "NominalCapacity": 250,
+      "CapacityTolerance": 0.3,
+      "Class": "A",
+      "Calibration": "TD",
+      "Neck": {
+        "NarrowWide": "Narrow",
+        "dscoreMax": 17
+      }
+    },
+    {
+      "NominalCapacity": 250,
+      "CapacityTolerance": 0.6,
+      "Class": "B",
+      "Calibration": "TD",
+      "Neck": {
+        "NarrowWide": "Narrow",
+        "dscoreMax": 17
+      }
+    },
+    {
+      "NominalCapacity": 300,
+      "CapacityTolerance": 0.25,
+      "Class": "A",
+      "Calibration": "TC",
+      "Neck": {
+        "NarrowWide": "Narrow",
+        "dscoreMax": 24
+      }
+    },
+    {
+      "NominalCapacity": 300,
+      "CapacityTolerance": 0.5,
+      "Class": "B",
+      "Calibration": "TC",
+      "Neck": {
+        "NarrowWide": "Narrow",
+        "dscoreMax": 24
+      }
+    },
+    {
+      "NominalCapacity": 300,
+      "CapacityTolerance": 0.5,
+      "Class": "A",
+      "Calibration": "TD",
+      "Neck": {
+        "NarrowWide": "Narrow",
+        "dscoreMax": 24
+      }
+    },
+    {
+      "NominalCapacity": 300,
+      "CapacityTolerance": 1,
+      "Class": "B",
+      "Calibration": "TD",
+      "Neck": {
+        "NarrowWide": "Narrow",
+        "dscoreMax": 24
+      }
+    },
+    {
+      "NominalCapacity": 500,
+      "CapacityTolerance": 0.25,
+      "Class": "A",
+      "Calibration": "TC",
+      "Neck": {
+        "NarrowWide": "Narrow",
+        "dscoreMax": 24
+      }
+    },
+    {
+      "NominalCapacity": 500,
+      "CapacityTolerance": 0.5,
+      "Class": "B",
+      "Calibration": "TC",
+      "Neck": {
+        "NarrowWide": "Narrow",
+        "dscoreMax": 24
+      }
+    },
+    {
+      "NominalCapacity": 500,
+      "CapacityTolerance": 0.5,
+      "Class": "A",
+      "Calibration": "TD",
+      "Neck": {
+        "NarrowWide": "Narrow",
+        "dscoreMax": 24
+      }
+    },
+    {
+      "NominalCapacity": 500,
+      "CapacityTolerance": 1,
+      "Class": "B",
+      "Calibration": "TD",
+      "Neck": {
+        "NarrowWide": "Narrow",
+        "dscoreMax": 24
+      }
+    },
+    {
+      "NominalCapacity": 1000,
+      "CapacityTolerance": 0.4,
+      "Class": "A",
+      "Calibration": "TC",
+      "Neck": {
+        "NarrowWide": "Narrow",
+        "dscoreMax": 25
+      }
+    },
+    {
+      "NominalCapacity": 1000,
+      "CapacityTolerance": 0.8,
+      "Class": "B",
+      "Calibration": "TC",
+      "Neck": {
+        "NarrowWide": "Narrow",
+        "dscoreMax": 25
+      }
+    },
+    {
+      "NominalCapacity": 1000,
+      "CapacityTolerance": 0.8,
+      "Class": "A",
+      "Calibration": "TD",
+      "Neck": {
+        "NarrowWide": "Narrow",
+        "dscoreMax": 25
+      }
+    },
+    {
+      "NominalCapacity": 1000,
+      "CapacityTolerance": 1.6,
+      "Class": "B",
+      "Calibration": "TD",
+      "Neck": {
+        "NarrowWide": "Narrow",
+        "dscoreMax": 25
+      }
+    },
+    {
+      "NominalCapacity": 2000,
+      "CapacityTolerance": 0.6,
+      "Class": "A",
+      "Calibration": "TC",
+      "Neck": {
+        "NarrowWide": "Narrow",
+        "dscoreMax": 30
+      }
+    },
+    {
+      "NominalCapacity": 2000,
+      "CapacityTolerance": 1.2,
+      "Class": "B",
+      "Calibration": "TC",
+      "Neck": {
+        "NarrowWide": "Narrow",
+        "dscoreMax": 30
+      }
+    },
+    {
+      "NominalCapacity": 2000,
+      "CapacityTolerance": 1.2,
+      "Class": "A",
+      "Calibration": "TD",
+      "Neck": {
+        "NarrowWide": "Narrow",
+        "dscoreMax": 30
+      }
+    },
+    {
+      "NominalCapacity": 2000,
+      "CapacityTolerance": 2.4,
+      "Class": "B",
+      "Calibration": "TD",
+      "Neck": {
+        "NarrowWide": "Narrow",
+        "dscoreMax": 30
+      }
+    },
+    {
+      "NominalCapacity": 2500,
+      "CapacityTolerance": 1.5,
+      "Class": "A",
+      "Calibration": "TC",
+      "Neck": {
+        "NarrowWide": "Narrow",
+        "dscoreMax": 34
+      }
+    },
+    {
+      "NominalCapacity": 2500,
+      "CapacityTolerance": 3,
+      "Class": "A",
+      "Calibration": "TD",
+      "Neck": {
+        "NarrowWide": "Narrow",
+        "dscoreMax": 34
+      }
+    },
+    {
+      "NominalCapacity": 5000,
+      "CapacityTolerance": 2,
+      "Class": "A",
+      "Calibration": "TC",
+      "Neck": {
+        "NarrowWide": "Narrow",
+        "dscoreMax": 35
+      }
+    },
+    {
+      "NominalCapacity": 3000,
+      "CapacityTolerance": 2,
+      "Class": "A",
+      "Calibration": "TC",
+      "Neck": {
+        "NarrowWide": "Narrow",
+        "dscoreMax": 35
+      }
+    },
+    {
+      "NominalCapacity": 3000,
+      "CapacityTolerance": 4,
+      "Class": "A",
+      "Calibration": "TD",
+      "Neck": {
+        "NarrowWide": "Narrow",
+        "dscoreMax": 36
+      }
+    },
+    {
+      "NominalCapacity": 5000,
+      "CapacityTolerance": 2,
+      "Class": "A",
+      "Calibration": "TC",
+      "Neck": {
+        "NarrowWide": "Narrow",
+        "dscoreMax": 50
+      }
+    },
+    {
+      "NominalCapacity": 5000,
+      "CapacityTolerance": 4,
+      "Class": "A",
+      "Calibration": "TD",
+      "Neck": {
+        "NarrowWide": "Narrow",
+        "dscoreMax": 50
+      }
+    },
+    {
+      "NominalCapacity": 10000,
+      "CapacityTolerance": 5,
+      "Class": "A",
+      "Calibration": "TC",
+      "Neck": {
+        "NarrowWide": "Narrow",
+        "dscoreMax": 65
+      }
+    },
+    {
+      "NominalCapacity": 10000,
+      "CapacityTolerance": 10,
+      "Class": "A",
+      "Calibration": "TD",
+      "Neck": {
+        "NarrowWide": "Narrow",
+        "dscoreMax": 65
+      }
+    },
+    {
+      "NominalCapacity": 50,
+      "CapacityTolerance": 0.2,
+      "Class": "B",
+      "Calibration": "TC",
+      "Neck": {
+        "NarrowWide": "Wide",
+        "dscoreMax": 20,
+        "dscoreMin": 14
+      }
+    },
+    {
+      "NominalCapacity": 100,
+      "CapacityTolerance": 0.25,
+      "Class": "B",
+      "Calibration": "TC",
+      "Neck": {
+        "NarrowWide": "Wide",
+        "dscoreMax": 20,
+        "dscoreMin": 14
+      }
+    },
+    {
+      "NominalCapacity": 200,
+      "CapacityTolerance": 0.3,
+      "Class": "B",
+      "Calibration": "TC",
+      "Neck": {
+        "NarrowWide": "Wide",
+        "dscoreMax": 25,
+        "dscoreMin": 17
+      }
+    },
+    {
+      "NominalCapacity": 250,
+      "CapacityTolerance": 0.3,
+      "Class": "B",
+      "Calibration": "TC",
+      "Neck": {
+        "NarrowWide": "Wide",
+        "dscoreMax": 25,
+        "dscoreMin": 17
+      }
+    },
+    {
+      "NominalCapacity": 500,
+      "CapacityTolerance": 0.2,
+      "Class": "B",
+      "Calibration": "TC",
+      "Neck": {
+        "NarrowWide": "Wide",
+        "dscoreMax": 20,
+        "dscoreMin": 14
+      }
+    }
+  ]
+}

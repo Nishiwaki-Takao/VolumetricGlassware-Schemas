@@ -1,0 +1,16 @@
+- name: Build API files
+  run: |
+    rm -rf docs
+    mkdir -p docs
+
+    # API root
+    cp data/index.json docs/index.json
+
+    # instruments (all data/* subfolders)
+    for dir in data/*; do
+      [ -d "$dir" ] || continue
+      base=$(basename "$dir")
+      slug=$(echo "$base" | sed -E 's/([a-z0-9])([A-Z])/\1-\2/g' | tr 'A-Z' 'a-z')
+      mkdir -p "docs/$slug"
+      cp "$dir/index.json" "docs/$slug/index.json"
+    done

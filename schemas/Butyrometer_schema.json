@@ -6,8 +6,13 @@
   "title": "Butyrometer.json schema",
   "type": "object",
   "properties": {
-    "Butyrometer": {
-      "description": "Butyrometer",
+    "Type": {
+      "description": "データ種別",
+      "type": "string",
+      "const": "Butyrometer"
+    },
+    "Items": {
+      "description": "Butyrometer items",
       "type": "array",
       "uniqueItems": true,
       "items": {
@@ -16,7 +21,15 @@
           "NominalCapacity": {
             "description": "乳脂計の容量あるいは目盛部の容量",
             "type": "number",
-            "enum": [ 0.625, 0.750, 0.875, 1.000, 1.125, 1.6, 5.0 ]
+            "enum": [
+              0.625,
+              0.750,
+              0.875,
+              1.000,
+              1.125,
+              1.6,
+              5.0
+            ]
           },
           "BodyCapacity": {
             "description": "乳脂計胴部の容量、その最大値と最小値",
@@ -25,31 +38,51 @@
               "Max": {
                 "type": "integer",
                 "description": "乳脂計胴部の最大容量",
-                "enum": [ 22, 50]
+                "enum": [
+                  22,
+                  50
+                ]
               },
               "Min": {
                 "type": "integer",
                 "description": "乳脂計胴部の最小容量",
-                "enum": [ 21, 45]
+                "enum": [
+                  21,
+                  45
+                ]
               }
             },
-            "required": ["Max","Min"],
+            "required": [
+              "Max",
+              "Min"
+            ],
             "additionalProperties": false
           },
           "Subdivision": {
             "description": "乳脂計の目盛",
             "type": "number",
-            "enum": [ 0.0125, 0.02, 0.05 ]
+            "enum": [
+              0.0125,
+              0.02,
+              0.05
+            ]
           },
           "CapacityTolerance": {
             "description": "乳脂計の許容誤差",
             "type": "number",
-            "enum": [0.0125, 0.02, 0.05]
+            "enum": [
+              0.0125,
+              0.02,
+              0.05
+            ]
           },
           "Type": {
             "description": "乳脂計の形式",
             "type": "string",
-            "enum": [ "Gerber", "Babcock" ]
+            "enum": [
+              "Gerber",
+              "Babcock"
+            ]
           }
         },
         "required": [
@@ -58,10 +91,14 @@
           "Subdivision",
           "CapacityTolerance",
           "Type"
-        ] ,
+        ],
         "additionalProperties": false
       }
     }
-  }
+  },
+  "required": [
+    "Type",
+    "Items"
+  ],
+  "additionalProperties": false
 }
-

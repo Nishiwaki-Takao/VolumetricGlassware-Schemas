@@ -6,8 +6,13 @@
   "title": "GraduatedPipette.json schema",
   "type": "object",
   "properties": {
-    "GraduatedPipette": {
-      "description": "GraduatedPippet",
+    "Type": {
+      "description": "データ種別",
+      "type": "string",
+      "const": "GraduatedPipette"
+    },
+    "Items": {
+      "description": "GraduatedPipette items",
       "type": "array",
       "uniqueItems": true,
       "items": {
@@ -16,27 +21,66 @@
           "NominalCapacity": {
             "description": "メスピペットの容量",
             "type": "number",
-            "enum": [ 0.1, 0.2, 0.3, 0.5, 1, 2, 3, 5, 10, 20, 25, 50 ]
+            "enum": [
+              0.1,
+              0.2,
+              0.3,
+              0.5,
+              1,
+              2,
+              3,
+              5,
+              10,
+              20,
+              25,
+              50
+            ]
           },
           "CapacityTolerance": {
             "description": "メスピペットの許容誤差",
             "type": "number",
-            "enum": [ 0.005, 0.01, 0.015, 0.02, 0.03, 0.05, 0.1, 0.2, 0.4 ]
+            "enum": [
+              0.005,
+              0.01,
+              0.015,
+              0.02,
+              0.03,
+              0.05,
+              0.1,
+              0.2,
+              0.4
+            ]
           },
           "Subdivision": {
             "description": "メスピペットの目盛",
             "type": "number",
-            "enum": [0.001, 0.002, 0.005, 0.01, 0.02, 0.05, 0.1, 0.2]
+            "enum": [
+              0.001,
+              0.002,
+              0.005,
+              0.01,
+              0.02,
+              0.05,
+              0.1,
+              0.2
+            ]
           },
           "Class": {
             "description": "メスピペットの等級",
             "type": "string",
-            "enum": [ "A", "B", "SuperGrade", "HighGrade" ]
+            "enum": [
+              "A",
+              "B",
+              "SuperGrade",
+              "HighGrade"
+            ]
           },
           "Calibration": {
             "description": "メスピペットの出受の定義",
             "type": "string",
-            "enum" :  ["TD"]
+            "enum": [
+              "TD"
+            ]
           },
           "ColorCode": {
             "description": "メスピペット上部のカラーコード",
@@ -45,28 +89,47 @@
               "Color": {
                 "type": "string",
                 "description": "メスピペットのカラーコードの色",
-                "enum": [ "Blue", "White", "Red", "Green", "Yellow", "Orange", "Black" ]
+                "enum": [
+                  "Blue",
+                  "White",
+                  "Red",
+                  "Green",
+                  "Yellow",
+                  "Orange",
+                  "Black"
+                ]
               },
               "NumberOfRing": {
                 "type": "integer",
                 "description": "メスピペットのカラーコードの帯数",
-                "enum": [ 1, 2 ]
+                "enum": [
+                  1,
+                  2
+                ]
               }
             },
-              "required": ["Color", "NumberOfRing"],
-              "additionalProperties": false
+            "required": [
+              "Color",
+              "NumberOfRing"
+            ],
+            "additionalProperties": false
           }
         },
         "required": [
-  "NominalCapacity",
-  "CapacityTolerance",
-  "Subdivision",
-  "Class",
-  "Calibration",
-  "ColorCode"
-],
-"additionalProperties": false
+          "NominalCapacity",
+          "CapacityTolerance",
+          "Subdivision",
+          "Class",
+          "Calibration",
+          "ColorCode"
+        ],
+        "additionalProperties": false
       }
     }
-  }
+  },
+  "required": [
+    "Type",
+    "Items"
+  ],
+  "additionalProperties": false
 }

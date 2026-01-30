@@ -2,27 +2,27 @@
   "pairs": [
     {
       "schema": "schemas/Burette_schema.json",
-      "data": "data/Burette/Burette.json"
+      "data": "data/Burette/index.json"
     },
     {
       "schema": "schemas/VolumetricFlask_schema.json",
-      "data": "data/VolumetricFlask/VolumetricFlask.json"
+      "data": "data/VolumetricFlask/index.json"
     },
     {
-      "schema":"schemas/GraduatedPipette_schema.json",
-      "data":"data/GraduatedPipette/GraduatedPipette.json"
+      "schema": "schemas/GraduatedPipette_schema.json",
+      "data": "data/GraduatedPipette/index.json"
     },
     {
-      "schema":"schemas/MeasuringCylinder_schema.json",
-      "data":"data/MeasuringCylinder/MeasuringCylinder.json"
+      "schema": "schemas/MeasuringCylinder_schema.json",
+      "data": "data/MeasuringCylinder/index.json"
     },
     {
-      "schema":"schemas/VolumetricPipette_schema.json",
-      "data":"data/VolumetricPipette/VolumetricPipette.json"
+      "schema": "schemas/VolumetricPipette_schema.json",
+      "data": "data/VolumetricPipette/index.json"
     },
     {
-      "schema":"schemas/Butyrometer_schema.json",
-      "data":"data/Butyrometer/Butyrometer.json"
+      "schema": "schemas/Butyrometer_schema.json",
+      "data": "data/Butyrometer/index.json"
     }
   ]
 }

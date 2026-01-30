@@ -6,58 +6,169 @@
   "title": "VolumetricFlask.json schema",
   "type": "object",
   "properties": {
-    "VolumetricFlask": {
-      "description": "VolumetricFlask",
+    "Type": {
+      "description": "データ種別",
+      "type": "string",
+      "const": "VolumetricFlask"
+    },
+    "Items": {
+      "description": "VolumetricFlask items",
       "type": "array",
       "uniqueItems": true,
       "items": {
         "type": "object",
-        "required": ["NominalCapacity","CapacityTolerance","Class","Calibration","Neck"],
+        "required": [
+          "NominalCapacity",
+          "CapacityTolerance",
+          "Class",
+          "Calibration",
+          "Neck"
+        ],
         "additionalProperties": false,
         "properties": {
           "NominalCapacity": {
             "description": "メスフラスコの容量",
             "type": "number",
-            "enum": [5, 10, 20, 25, 50, 100, 200, 250, 300, 500, 1000, 2000, 2500, 3000, 5000, 10000 ]
+            "enum": [
+              5,
+              10,
+              20,
+              25,
+              50,
+              100,
+              200,
+              250,
+              300,
+              500,
+              1000,
+              2000,
+              2500,
+              3000,
+              5000,
+              10000
+            ]
           },
           "CapacityTolerance": {
             "description": "メスフラスコの許容誤差",
             "type": "number",
-            "anyOf": [ 
-                {"enum" :[0.025,0.05,0.1]},
-                {"enum" :[0.04,0.08,0.16]},
-                {"enum": [0.06,0.12,0.24]},
-                {"enum": [0.1,0.2,0.4]},
-                {"enum": [0.15,0.3,0.6]},
-                {"enum": [0.25,0.5,1.0]},
-                {"enum": [0.4,0.8,1.6]},
-                {"enum": [0.6,1.2,2.4]},
-                {"enum": [1.5,3.0]},
-                {"enum": [2.0,4.0]},
-                {"enum": [5,10]},
-                {"enum": [0.2,0.25,0.3]}
+            "anyOf": [
+              {
+                "enum": [
+                  0.025,
+                  0.05,
+                  0.1
+                ]
+              },
+              {
+                "enum": [
+                  0.04,
+                  0.08,
+                  0.16
+                ]
+              },
+              {
+                "enum": [
+                  0.06,
+                  0.12,
+                  0.24
+                ]
+              },
+              {
+                "enum": [
+                  0.1,
+                  0.2,
+                  0.4
+                ]
+              },
+              {
+                "enum": [
+                  0.15,
+                  0.3,
+                  0.6
+                ]
+              },
+              {
+                "enum": [
+                  0.25,
+                  0.5,
+                  1.0
+                ]
+              },
+              {
+                "enum": [
+                  0.4,
+                  0.8,
+                  1.6
+                ]
+              },
+              {
+                "enum": [
+                  0.6,
+                  1.2,
+                  2.4
+                ]
+              },
+              {
+                "enum": [
+                  1.5,
+                  3.0
+                ]
+              },
+              {
+                "enum": [
+                  2.0,
+                  4.0
+                ]
+              },
+              {
+                "enum": [
+                  5,
+                  10
+                ]
+              },
+              {
+                "enum": [
+                  0.2,
+                  0.25,
+                  0.3
+                ]
+              }
             ]
-            },
+          },
           "Class": {
             "description": "メスフラスコの等級",
             "type": "string",
-            "enum": [ "A", "B", "SuperGrade", "HighGrade" ]
+            "enum": [
+              "A",
+              "B",
+              "SuperGrade",
+              "HighGrade"
+            ]
           },
           "Calibration": {
             "description": "メスフラスコの出受の定義",
             "type": "string",
-            "enum" :  ["TD","TC"]
+            "enum": [
+              "TD",
+              "TC"
+            ]
           },
-           "Neck": {
+          "Neck": {
             "description": "メスフラスコの目盛線部分の形状に関する情報",
             "type": "object",
-            "required": ["NarrowWide","dscoreMax"],
+            "required": [
+              "NarrowWide",
+              "dscoreMax"
+            ],
             "additionalProperties": false,
             "properties": {
               "NarrowWide": {
                 "type": "string",
                 "description": "メスフラスコの目盛線部分の太いか細いか",
-                "enum": [ "Narrow", "Wide"]
+                "enum": [
+                  "Narrow",
+                  "Wide"
+                ]
               },
               "dscoreMax": {
                 "type": "integer",
@@ -66,17 +177,29 @@
               "dscoreMin": {
                 "type": "integer",
                 "description": "メスフラスコの目盛線部分の最小内径"
-                },
-              "if": {
-                "properties": { "NarrowWide": { "const": "Wide" } }
               },
-            "then": {"required": ["dscoreMin"]
-                },
-           "else": {}
-           }
+              "if": {
+                "properties": {
+                  "NarrowWide": {
+                    "const": "Wide"
+                  }
+                }
+              },
+              "then": {
+                "required": [
+                  "dscoreMin"
+                ]
+              },
+              "else": {}
+            }
           }
-         }
         }
       }
     }
+  },
+  "required": [
+    "Type",
+    "Items"
+  ],
+  "additionalProperties": false
 }

@@ -1,0 +1,13 @@
+{
+  "name": "VolumetricGlassware API",
+  "version": "1.0.0",
+  "updated": "2026-01-30",
+  "endpoints": {
+    "burette": "/burette/",
+    "butyrometer": "/butyrometer/",
+    "graduated-pipette": "/graduated-pipette/",
+    "measuring-cylinder": "/measuring-cylinder/",
+    "volumetric-flask": "/volumetric-flask/",
+    "volumetric-pipette": "/volumetric-pipette/"
+  }
+}

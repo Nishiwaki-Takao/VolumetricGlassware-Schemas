@@ -36,3 +36,4 @@ command -v npm >/dev/null || {
 
 npm ci
 npm run validate
+

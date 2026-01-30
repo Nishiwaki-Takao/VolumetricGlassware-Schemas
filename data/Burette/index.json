@@ -1,5 +1,6 @@
 {
-  "Burette": [
+  "Type":"Burette",
+  "Items": [
     { "NominalCapacity": 1, "Subdivision": 0.005, "CapacityTolerance": 0.01, "Class": "A", "Calibration": "TD", "Type": "Graduated" },
     { "NominalCapacity": 1, "Subdivision": 0.005, "CapacityTolerance": 0.02, "Class": "B", "Calibration": "TD", "Type": "Graduated" },
     { "NominalCapacity": 1, "Subdivision": 0.01, "CapacityTolerance": 0.01, "Class": "A", "Calibration": "TD", "Type": "Graduated" },
